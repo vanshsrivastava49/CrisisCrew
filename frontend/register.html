@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>CrisisCrew - Sign Up/Sign In</title>
+</head>
+<body>
+    <nav>
+        <h3><a href="home.html" style="text-decoration:none; color:white;">CrisisCrew</a></h3>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="register.html">Sign-up/Sign-in</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signupForm">
+                <h1>Create Account</h1>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="hidden" id="latitude" placeholder="Latitude" required readonly>
+                <input type="hidden" id="longitude" placeholder="Longitude" required readonly>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="loginForm">
+                <h1>Sign In</h1>
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <a href="#">Forget Your Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="./location.html" style="color:white">Know your Location</a>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
