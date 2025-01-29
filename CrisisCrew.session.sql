@@ -1,0 +1,2 @@
+use crisiscrew;
+show tables;
